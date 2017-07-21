@@ -1,0 +1,23 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/">Job App Tracker</a>
+		</div>
+
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul id="appNav" class="nav navbar-nav" data-bind="foreach: routes">
+				<li data-bind="css: { 'active': $parent.route().page === params.page }"><a data-bind="text: params.name, attr: { href: url }, click: $parent.CollapseMenu"></a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/Account/Logout">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

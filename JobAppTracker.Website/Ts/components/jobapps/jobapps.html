@@ -1,0 +1,29 @@
+﻿<section class="section">
+	<div class="page-header">
+		<h1>Job Apps</h1>
+	</div>
+
+	<table class="table table-striped" data-bind="if: JobApps().length > 0">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Title</th>
+				<th>Location</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+
+		<tbody data-bind="foreach: JobApps">
+			<tr>
+				<td data-bind="text: Id"></td>
+				<td data-bind="text: Title"></td>
+				<td data-bind="text: Location"></td>
+				<td data-bind="text: Type"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div data-bind="if: JobApps().length === 0">
+		<p class="lead">There are no job apps to display.</p>
+	</div>
+</section>

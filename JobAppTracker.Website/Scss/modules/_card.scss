@@ -1,0 +1,30 @@
+﻿.cards {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	flex: 0 0 300px;
+	width: 300px;
+	border: 1px solid #EFEFEF;
+
+	&__header {
+		padding: 20px;
+		border-bottom: 1px solid #EFEFEF;
+	}
+
+	&__title {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	&__body {
+		min-height: 150px;
+		padding: 20px;
+		background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	}
+}

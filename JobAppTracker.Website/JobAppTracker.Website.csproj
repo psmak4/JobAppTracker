@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <UserSecretsId>aspnet-JobAppTracker.Website-4a921731-22c9-464e-8c77-a042c4e0f04d</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Content Include="wwwroot\fonts\roboto\Roboto-Bold.woff" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Bold.woff2" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Light.woff" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Light.woff2" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Medium.woff" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Medium.woff2" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Regular.woff" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Regular.woff2" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Thin.woff" />
+    <Content Include="wwwroot\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="wwwroot\images\whirlpool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Api\" />
+    <Folder Include="Controllers\Api\" />
+    <Folder Include="Views\Pages\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+</Project>

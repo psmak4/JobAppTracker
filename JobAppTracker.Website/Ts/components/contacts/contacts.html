@@ -1,0 +1,28 @@
+﻿<section class="section">
+	<div class="page-header">
+		<h1>Contacts</h1>
+	</div>
+
+	<ul class="cards" data-bind="if: Contacts().length > 0">
+		<li class="card" data-bind="foreach: Contacts">
+			<div class="card__header">
+				<div class="card__title" data-bind="text: Name"></div>
+			</div>
+
+			<div class="card__body">
+				<div data-bind="if: Phone">
+					<label class="small text-muted">Phone:</label>
+					<div data-bind="text: Phone"></div>
+				</div>
+				<div data-bind="if: Email">
+					<label class="small text-primary">email</label>
+					<div data-bind="text: Email"></div>
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	<div data-bind="if: Contacts().length === 0">
+		<p class="lead">There are no contacts to display.</p>
+	</div>
+</section>

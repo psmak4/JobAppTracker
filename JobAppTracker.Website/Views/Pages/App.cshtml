@@ -1,0 +1,24 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>App</title>
+	<environment names="Development">
+		<link rel="stylesheet" href="~/css/app.css" />
+	</environment>
+	<environment names="Staging,Production">
+		<link rel="stylesheet" href="~/css/app.min.css" />
+	</environment>
+</head>
+<body>
+	<app-root params="history: history"></app-root>
+
+	<script src="~/js/vendor.js"></script>
+	<script src="~/js/app.js"></script>
+</body>
+</html>
